@@ -1,0 +1,6 @@
+@PatternsSandbox_HostAddress = http://localhost:5051
+
+GET {{PatternsSandbox_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
