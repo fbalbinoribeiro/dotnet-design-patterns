@@ -5,7 +5,7 @@ namespace PatternsSandbox.Patterns.Behavioral.Strategy;
 
 public static class StrategyEndpoints
 {
-	public static void MapStrategyEndpoints(this IEndpointRouteBuilder routes)
+	public static void MapEndpoints(this IEndpointRouteBuilder routes)
 	{
 		routes.MapPost("/strategy", (string operation, byte firstNumber, byte secondNumber) =>
 		{
@@ -21,6 +21,14 @@ public static class StrategyEndpoints
 			return Results.Ok(result);
 		})
 		.WithName("BehavioralStrategy")
-		.WithOpenApi();
+		.WithOpenApi(op =>
+		{
+			var param = op.Parameters.FirstOrDefault(p => p.Name == "operation");
+			if (param is not null)
+			{
+				param.Description = "add, subtract, multiply.";
+			}
+			return op;
+		});
 	}
 }
