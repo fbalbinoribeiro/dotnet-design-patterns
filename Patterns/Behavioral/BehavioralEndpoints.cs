@@ -1,3 +1,4 @@
+using PatternsSandbox.Patterns.Behavioral.Command;
 using PatternsSandbox.Patterns.Behavioral.Strategy;
 using PatternsSandbox.Patterns.Behavioral.TemplateMethod;
 
@@ -10,5 +11,6 @@ public static class BehavioralEndpoints
 		var app = routes.MapGroup("/behavioral");
 		StrategyEndpoints.MapEndpoints(app);
 		TemplateMethodEndpoints.MapEndpoints(app);
+		CommandEndpoints.MapEndpoints(app);
 	}
 }

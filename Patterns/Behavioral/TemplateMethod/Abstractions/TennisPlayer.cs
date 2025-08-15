@@ -1,6 +1,6 @@
 namespace PatternsSandbox.Patterns.Behavioral.TemplateMethod.Abstractions;
 
-public abstract record AbstractTennisPlayer(string Name)
+public abstract record TennisPlayer(string Name)
 {
 	public string Name { get; } = Name;
 	public List<string> Steps { get; } = [];

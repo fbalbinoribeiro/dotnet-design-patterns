@@ -1,3 +1,4 @@
+using PatternsSandbox.Patterns.Behavioral.Command.Interfaces;
 using PatternsSandbox.Patterns.Behavioral.TemplateMethod.Abstractions;
 using PatternsSandbox.Patterns.Behavioral.TemplateMethod.Implementations;
 
@@ -10,7 +11,7 @@ public static class TemplateMethodEndpoints
 	{
 		routes.MapPost("/template-method", (string playerType) =>
 		{
-			AbstractTennisPlayer player = playerType switch
+			TennisPlayer player = playerType switch
 			{
 				"one-handed" => new OneHandedBackHandTennisPlayer("Player1"),
 				"two-handed" => new TwoHandedBackHandTennisPlayer("Player2"),

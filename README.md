@@ -28,7 +28,8 @@ Each design pattern is implemented in its own folder with:
 
 ## Design Patterns Index
 
-| Pattern Name    | Type       | Link                                                     | Brief Explanation                                                                      | Similar Patterns         |
-| --------------- | ---------- | -------------------------------------------------------- | -------------------------------------------------------------------------------------- | ------------------------ |
-| Strategy        | Behavioral | [README](./Patterns/Behavioral/Strategy/README.md)       | Defines a family of algorithms, encapsulates each one, and makes them interchangeable. | State, Template Method   |
-| Template Method | Behavioral | [README](./Patterns/Behavioral/TemplateMethod/README.md) | Defines the skeleton of an algorithm, allowing subclasses to override specific steps.  | Strategy, Factory Method |
+| Pattern Name    | Type       | Link                                                     | Brief Explanation                                                                       | Similar Patterns                  |
+| --------------- | ---------- | -------------------------------------------------------- | --------------------------------------------------------------------------------------- | --------------------------------- |
+| Strategy        | Behavioral | [README](./Patterns/Behavioral/Strategy/README.md)       | Defines a family of algorithms, encapsulates each one, and makes them interchangeable.  | State, Template Method            |
+| Template Method | Behavioral | [README](./Patterns/Behavioral/TemplateMethod/README.md) | Defines the skeleton of an algorithm, allowing subclasses to override specific steps.   | Strategy, Factory Method          |
+| Command         | Behavioral | [README](./Patterns/Behavioral/Command/README.md)        | Encapsulates a request as an object, allowing parameterization and queuing of requests. | Mediator, Chain of Responsibility |
