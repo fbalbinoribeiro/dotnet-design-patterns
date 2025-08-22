@@ -1,4 +1,5 @@
 using PatternsSandbox.Patterns.Behavioral.Command;
+using PatternsSandbox.Patterns.Behavioral.Iterator;
 using PatternsSandbox.Patterns.Behavioral.Strategy;
 using PatternsSandbox.Patterns.Behavioral.TemplateMethod;
 
@@ -12,5 +13,6 @@ public static class BehavioralEndpoints
 		StrategyEndpoints.MapEndpoints(app);
 		TemplateMethodEndpoints.MapEndpoints(app);
 		CommandEndpoints.MapEndpoints(app);
+		IteratorEndpoints.MapEndpoints(app);
 	}
 }
