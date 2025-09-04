@@ -22,7 +22,7 @@ public static class CommandEndpoints
 			command.Execute();
 			return Results.Ok($"Light is now {(light.IsOn ? "on" : "off")}.");
 		})
-		.WithName("BehavioralCommand")
+		.WithName("Command")
 		.WithOpenApi(op =>
 		{
 			var param = op.Parameters.FirstOrDefault(p => p.Name == "action");

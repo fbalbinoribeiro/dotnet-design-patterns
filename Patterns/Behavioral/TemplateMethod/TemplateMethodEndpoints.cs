@@ -22,7 +22,7 @@ public static class TemplateMethodEndpoints
 
 			return Results.Ok(player.Steps);
 		})
-		.WithName("BehavioralTemplateMethod")
+		.WithName("TemplateMethod")
 		.WithOpenApi(op =>
 		{
 			var param = op.Parameters.FirstOrDefault(p => p.Name == "playerType");

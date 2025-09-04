@@ -27,7 +27,7 @@ public static class IteratorEndpoints
 
 			return Results.Ok(result);
 		})
-		.WithName("BehavioralIterator")
+		.WithName("Iterator")
 		.WithOpenApi(op =>
 		{
 			var param = op.Parameters.FirstOrDefault(p => p.Name == "order");

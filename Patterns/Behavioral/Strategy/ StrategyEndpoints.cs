@@ -20,7 +20,7 @@ public static class StrategyEndpoints
 			var result = strategy.Execute(firstNumber, secondNumber);
 			return Results.Ok(result);
 		})
-		.WithName("BehavioralStrategy")
+		.WithName("Strategy")
 		.WithOpenApi(op =>
 		{
 			var param = op.Parameters.FirstOrDefault(p => p.Name == "operation");
