@@ -1,3 +1,4 @@
+using PatternsSandbox.Patterns.Behavioral.Chain;
 using PatternsSandbox.Patterns.Behavioral.Command;
 using PatternsSandbox.Patterns.Behavioral.Iterator;
 using PatternsSandbox.Patterns.Behavioral.Memento;
@@ -20,5 +21,6 @@ public static class BehavioralEndpoints
 		StateEndpoints.MapEndpoints(app);
 		ObserverEndpoints.MapEndpoints(app);
 		MementoEndpoints.MapEndpoints(app);
-	}
+		ChainEndpoints.MapEndpoints(app);
+    }
 }
